@@ -1,0 +1,30 @@
+Given a Binary Number, the task is to convert the given binary number to its equivalent hexadecimal number. The input could be very large and may not fit even into an unsigned long long int.
+
+Examples: 
+
+Input: 110001110
+Output: 18E
+
+Input: 1111001010010100001.010110110011011
+Output: 794A1.5B36 794A1D9B
+ 
+import java.io.*;
+
+class GFG {
+	
+	public static void main(String[] args)
+	{
+
+		String n = "110001110";
+		int s=Integer.parseInt(n, 2);
+		
+
+	
+		String hexNumber = Integer.toHexString(s);
+		System.out.println(hexNumber);
+	}
+}
+
+// This code is contributed
+// By Yash Kumar Arora
+
