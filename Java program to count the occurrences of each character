@@ -1,0 +1,30 @@
+Java program to count the occurrences of each character
+class HelloWorld {
+    public static void main(String[] args) {
+        int count=0;
+        String str = "geeksforgeeks";
+        String completed = "";
+        for(int i=0;i<str.length();i++) {
+             count=0; 
+            for(int j=i; j<str.length();j++) {
+                if(str.charAt(i)==str.charAt(j)) {
+                    count++;   
+                }
+            }
+            String s = String.valueOf(str.charAt(i));
+            if(!completed.contains(s)){
+                completed=completed+str.charAt(i);
+                System.out.println("Total number of count of occurance of "+str.charAt(i)+" is "+count);
+            }         
+        }
+ 
+    }
+}
+
+Total number of count of occurance of g is 2
+Total number of count of occurance of e is 4
+Total number of count of occurance of k is 2
+Total number of count of occurance of s is 2
+Total number of count of occurance of f is 1
+Total number of count of occurance of o is 1
+Total number of count of occurance of r is 1
